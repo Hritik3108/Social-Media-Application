@@ -1,0 +1,76 @@
+.tweetCard-container {
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    padding: 10px;
+    /* margin-bottom: 20px; */
+    background-color: #fff;
+}
+
+.tweet-image {
+    max-width: 80%;
+    max-height: 80vh;
+    object-fit: cover;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.tweet-buttons p {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.comment-btn-icon {
+    margin-right: 5px;
+    color: rgb(0, 170, 255);
+}
+
+.retweet-btn-icon {
+    margin-right: 5px;
+    color: #4CAF50;
+}
+
+
+.heart-btn-icon {
+    margin-right: 5px;
+    color: red;
+}
+
+.liked{
+    background-color: red;
+}
+
+.tweet-buttons {
+    margin-top: 10px;
+}
+
+.retweeted-by {
+    font-size: 0.875rem;
+    color: #657786;
+}
+
+.username{
+    cursor: pointer;
+}
+
+.username:hover{
+    text-decoration: underline;
+}
+
+.delete-btn{
+    margin-left: 0vh;
+    color: tomato;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.tweet-content{
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .tweet-image {
+        max-width: 90%;
+    }
+}

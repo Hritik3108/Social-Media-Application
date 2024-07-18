@@ -1,0 +1,142 @@
+/* Auth form */
+#logo-icon{
+    font-size: 100px;
+    color: white;
+}
+
+.logo-text{
+    color: white;
+}
+
+.form-col{
+    background-color: white;
+    padding:1%;
+}
+
+.auth{
+    background-color: rgb(247, 242, 242);
+    
+}
+
+.logo-col{
+    height: 500px;
+    background-color: rgb(0, 170, 255);
+}
+
+.auth-container{
+    width: 100vh;
+    height: 500px;
+}
+
+.profile-picture-icon{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 10vh;
+    width: 11vh;
+    height: 11vh;
+    padding: 10%;
+    color: gainsboro;
+    border: 3px solid gray;
+    border-radius: 100%;
+    background-color: white;
+    cursor: pointer;
+}
+
+.profile-img{
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 100%;
+    width: 14vh;
+    height: 14vh;
+    object-fit: cover;
+}
+
+/* Home tabs */
+.tab-1-div{
+    margin-left: 60vh;
+    width: 40%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.tab-2-div{
+    margin-left: 60vh;
+    width: 40%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.mainScreen-heading{
+    z-index: 150;
+}
+
+.card-header{
+    background-color: white;
+}
+
+.popup-container{
+    max-width: 500px;
+    width: 100%;
+    max-height: 100%;
+    height: fit-content;
+    position: fixed;
+    top:9vh;
+    z-index: 200;
+    padding: 1%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.close-btn{
+    position: absolute; 
+    top:1dvh;
+    right: 3dvh;
+    color: rgb(156 163 175);
+    background: transparent;
+    border: none;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;     
+}
+
+.close-btn:hover{
+    background-color: rgb(229 231 235);
+    color: rgb(17 24 39);
+    background-color: rgba(234, 58, 58, 0.903);
+    color: white;
+}
+
+.edit-label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.picture-preview{
+    width: 50%;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    /* Home tabs */
+    .tab-1-div{
+        margin-left: 0vh;
+        width: 100%;
+    }
+
+    .tab-2-div{
+        margin-left: 0vh;
+        width: 100%;
+    }
+
+    .mainScreen-heading{
+        margin-left: 60px;
+    }
+}

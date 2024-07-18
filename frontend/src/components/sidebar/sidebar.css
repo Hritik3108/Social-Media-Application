@@ -1,0 +1,99 @@
+/* sidebar.css */
+.sidebar-container {
+    position: fixed;
+    z-index: 100;
+    width: 400px;
+    background-color: white;
+    backdrop-filter: blur(5px);
+    border-right: 1px solid gainsboro;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.sidebar-btn{
+    /* background-color: gainsboro; */
+}
+
+.sidebar.show {
+    transform: translateX(0);
+}
+
+.toggle-btn-icon {
+    font-size: 24px;
+}
+
+.sidebar-div{
+    
+}
+
+.sidebar-bottom-ul{
+    position: absolute;
+    bottom: 50px;
+    max-width: 300px;
+    width: 100%;
+    z-index: 101;
+}
+
+.sidebar-ul{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 300px;
+}
+
+.sidebar-li{
+    list-style: none;
+    margin: 5px 0px;
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+}
+
+.sidebar-bottom-li{
+    list-style: none;
+    margin: 5px 0px;
+    padding: 8px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.sidebar-li.active{
+    background-color: rgba(0, 145, 255, 0.274);
+}
+
+.sidebar-li:hover{
+    background-color: rgba(0, 145, 255, 0.274);
+}
+
+.sidebar-li:focus{
+    background-color: rgba(0, 145, 255, 0.274);
+}
+
+.sidebar-profile-pic{
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+    }
+
+    .sidebar.show {
+        transform: translateX(0);
+    }
+}
